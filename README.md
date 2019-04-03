@@ -1,4 +1,4 @@
-# 라라곤을 활용하여 라라벨 다루기
+# <span style="color:red">라라곤을 활용하여 라라벨 다루기</span>
 * Web-sever : Apache 2.4, DB : Mysql 5.7
 ## 학습한 내용
 ### 라라벨 구조 이해
