@@ -2,7 +2,7 @@
   if (!empty($_GET['q'])) {
     switch ($_GET['q']) {
       case 'info':
-        phpinfo(); 
+        phpinfo();
         exit;
       break;
     }
@@ -52,7 +52,7 @@
               text-decoration: none;
               font-size: 150%;
             }
-            
+
             a:hover {
               color: red;
             }
@@ -62,7 +62,7 @@
         <div class="container">
             <div class="content">
                 <div class="title" title="Laragon">Laragon</div>
-     
+
                 <div class="info"><br />
                       <?php print($_SERVER['SERVER_SOFTWARE']); ?><br />
                       PHP version: <?php print phpversion(); ?>   <span><a title="phpinfo()" href="/?q=info">info</a></span><br />

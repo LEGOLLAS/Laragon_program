@@ -8,7 +8,7 @@ $team = array(
 	
 	foreach($team as $key=>$value){
 		foreach($value as $keys => $values){
-			echo $key.'에서 '.$keys[].'은 '.$values.'입니다.'.'</br>';
+			echo $key.'에서 '.$keys.'은 '.$values.'입니다.'.'</br>';
 		}
 	}
 
