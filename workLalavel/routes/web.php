@@ -11,11 +11,11 @@
 |
 */
 
-//Route::get('/', 'IndexController@ji');
+Route::get('/', 'IndexController@getIndex');
 Route::get('/greeting', 'IndexController@greeting');
+Route::get('/greeting_ok', 'IndexController@greeting_ok');
 
 
 //Route::get('/', function () {
 //    return view('welcome1');
 //});
-
