@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', 'IndexController@getIndex');
-Route::get('/greeting', 'IndexController@greeting');
-Route::post('/greeting_ok', 'IndexController@greeting_ok');
-
-
-//Route::get('/', function () {
-//    return view('welcome1');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
