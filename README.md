@@ -15,19 +15,23 @@
 7. str_place()함수
 8. Secure coding & SQL injection
 9. 상속한 객체를 가져와 변수로 사용
+10. Controller 단에서 배열을 만들고 배열을 view 단으로 넘겨주고 key와 value에 따라서 출력하기
+11. Request 객체를 사용하여 내부함수를 통해 데이터 input, output
+12. Request에서 all()함수를 통해서 프로그래밍
+13. $_GET과 $_POST로 데이터 불러오는 방식 이해 
+14. ::(static)과 ->(객체접근)의 차이점
 ### php 배열
 1. 배열의 Key와 Value 이해
 2. 배열에 foreach문을 통해 반복 및 선택한 value만 출력
 3. 배열에 정렬 알고리즘 활용
-4. ::(static)과 ->(객체접근)의 차이점
-5. 배열에 사용되는 정렬함수들
+4. 배열에 사용되는 정렬함수들
     - sort()
     - asort()
     - ksort()
     - rsort()
     - arsort()
-    - krsort()
-6. $_GET과 $_POST로 데이터 불러오는 방식 이해 
+    - krsort() 
+5.배열과 html 태그를 foreach문을 통해서 반복 출력
 ### 라라벨 고유언어
 1. 제어문과 반복문 익히기
 2. 출력문 익히기
