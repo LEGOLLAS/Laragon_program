@@ -39,7 +39,7 @@ rsort($fruit);
 print1($fruit);
 
 //asort() 적용하기 : 내용을 기준으로 오름차순
-$student = array('홍지혁'=>'26', 
+$student = array('홍지혁'=>'26',
 								 '김철수'=>'19',
 								 '박수진'=>'32',
 								 '김미영'=>'29',
@@ -54,7 +54,7 @@ print2($student);
 //arsort() 적용하기 : asort()의 역순으로 정렬
 arsort($student);
 print2($student);
-
+//
 //krsort() 적용하기 : ksort()의 역순으로 정렬
 krsort($student);
 print2($student);
