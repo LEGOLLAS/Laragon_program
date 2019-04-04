@@ -1,0 +1,43 @@
+#form_header{
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+#form_content{
+  width: 300px;
+}
+.a{
+  font-size: 1.2em;
+}
+.form_join{
+  width: 300px;
+  border: 1px solid #000000;
+  margin: 0 auto;
+}
+.table_join{
+  width: 300px;
+  border: 1px solid #000000;
+  margin: 0 auto;
+}
+.form_content{
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #000000;
+}
+#aaa input{
+  width: 80px;
+}
+#team_table{
+  margin: 0 auto;
+  border: 1px solid #000000;
+}
+#team_table tr td{
+  text-align: center;
+  width: 100px;
+  border: 1px solid #000000;
+}
+#team_table tr th{
+  text-align: center;
+  width: 200px;
+  border: 1px solid #000000;
+}

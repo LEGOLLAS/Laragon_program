@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@introduce');
+Route::get('/join', 'IndexController@join_input');
+Route::post('/join_output', 'IndexController@join_output');
+Route::get('/team', 'IndexController@show_team');
