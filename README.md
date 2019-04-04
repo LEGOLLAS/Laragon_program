@@ -4,13 +4,13 @@
 ### 라라벨 구조 이해
 1. MVC방식 이해
 2. Route -> Controller -> View로 연결되는 과정 학습
- - Route에서 app/HTTP/Controller경로와 사용 function을 지정
- - app/HTTP/Controller에서 Function를 만들어 resources/view/보여줄 파일로 전송
- - view 폴더에 파일에서 최종적으로 출력
+    - Route에서 app/HTTP/Controller경로와 사용 function을 지정
+    - app/HTTP/Controller에서 Function를 만들어 resources/view/보여줄 파일로 전송
+    - view 폴더에 파일에서 최종적으로 출력
 3. namespace , use 의 역할
 4. 클래스 상속 과정
 5. form 태그로 데이터 전송하고 출력
- - GET방식과 POST방식 
+    - GET방식과 POST방식 
 6. {{ csrf_field() }} 헬퍼 함수
 7. str_place()함수
 8. Secure coding & SQL injection
@@ -21,12 +21,12 @@
 3. 배열에 정렬 알고리즘 활용
 4. ::(static)과 ->(객체접근)의 차이점
 5. 배열에 사용되는 정렬함수들
- - sort()
- - asort()
- - ksort()
- - rsort()
- - arsort()
- - krsort()
+    - sort()
+    - asort()
+    - ksort()
+    - rsort()
+    - arsort()
+    - krsort()
 6. $_GET과 $_POST로 데이터 불러오는 방식 이해 
 ### 라라벨 고유언어
 1. 제어문과 반복문 익히기
