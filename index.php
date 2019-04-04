@@ -1,4 +1,5 @@
 <?php
+//
   if (!empty($_GET['q'])) {
     switch ($_GET['q']) {
       case 'info':
