@@ -3,7 +3,7 @@
 <div id="form_header">
     <h1>가입</h1>
 </div>
-<form class="form_join" action="/work5/public/join_output" method="post">
+<form class="form_join" action="/work5/public/joinOutput" method="post">
 {{ csrf_field() }}
   <table>
     <tr>

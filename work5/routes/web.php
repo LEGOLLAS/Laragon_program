@@ -12,6 +12,6 @@
 */
 
 Route::get('/', 'IndexController@introduce');
-Route::get('/join', 'IndexController@join_input');
-Route::post('/join_output', 'IndexController@join_output');
-Route::get('/team', 'IndexController@show_team');
+Route::get('/join', 'IndexController@joinInput');
+Route::post('/joinOutput', 'IndexController@joinOutput');
+Route::get('/team', 'IndexController@showTeam');

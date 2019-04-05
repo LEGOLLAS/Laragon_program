@@ -6,15 +6,15 @@
   <table class="form_join">
     <tr>
       <td>이름 : </td>
-      <td>{{$aaa}}</td>
+      <td>{{$joinName}}</td>
     </tr>
     <tr>
       <td>아이디 : </td>
-      <td>{{$bbb}}</td>
+      <td>{{$joinId}}</td>
     </tr>
     <tr>
       <td>이메일 : </td>
-      <td>{{$ccc}}</td>
+      <td>{{$joinEmail}}</td>
     </tr>
   </table>
 </div>
