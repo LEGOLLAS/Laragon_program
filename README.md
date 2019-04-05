@@ -20,6 +20,8 @@
 12. Request에서 all()함수를 통해서 프로그래밍
 13. $_GET과 $_POST로 데이터 불러오는 방식 이해 
 14. ::(static)과 ->(객체접근)의 차이점
+15. laravel CRUD 방식 이해
+16. Rout::resource 이해
 ### php 배열
 1. 배열의 Key와 Value 이해
 2. 배열에 foreach문을 통해 반복 및 선택한 value만 출력
