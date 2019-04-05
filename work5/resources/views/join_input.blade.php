@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="http://localhost/work5/resources/css/style.css">
-<title>가입하기</title>
+<title>가입하</title>
 <div id="form_header">
     <h1>가입</h1>
 </div>

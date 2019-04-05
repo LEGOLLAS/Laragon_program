@@ -6,18 +6,21 @@
     <link rel="stylesheet" href="http://localhost/work5/resources/css/style.css">
   </head>
   <body>
+
+    <?php $convertData = json_decode($introKey,TRUE)?>
+
     <div id="form_header">
         <h1>자기소개서</h1>
     </div>
     <div class="form_content">
         <ul>
-          <li class='a'>이름 : {{$intro_key['name']}}</li>
-          <li class='a'>나이 : {{$intro_key['age']}}</li>
-          <li class='a'>이메일 : {{$intro_key['email']}}</li>
-          <li class='a'>대학교 : {{$intro_key['university']}}</li>
-          <li class='a'>학과 : {{$intro_key['study']}}</li>
-          <li class='a'>군대 : {{$intro_key['army']}}</li>
-          <li class='a'>주소 : {{$intro_key['address']}}</li>
+          <li class='a'>이름 : {{$convertData['name']}}</li>
+          <li class='a'>나이 : {{$convertData['age']}}</li>
+          <li class='a'>이메일 : {{$convertData['email']}}</li>
+          <li class='a'>대학교 : {{$convertData['university']}}</li>
+          <li class='a'>학과 : {{$convertData['study']}}</li>
+          <li class='a'>군대 : {{$convertData['army']}}</li>
+          <li class='a'>주소 : {{$convertData['address']}}</li>
         </ul>
     </div>
   </body>

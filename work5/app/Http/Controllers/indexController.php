@@ -18,12 +18,12 @@ class IndexController extends Controller{
                    'university'=>'제주대학교',
                    'study'=>'컴퓨터공학전공',
                    'army'=>'군필',
-                   'address'=>'제주특별자치도 제주시 독짓골 8길 57'
+                   'address'=>'제주특별자치도 제주시 독짓골 8길 57, 명주아파트 2차 203호'
                  );
 
-
+      $outjson = json_encode($intro, JSON_UNESCAPED_UNICODE);
      //function introduce에서 만든 배열을 intro_key라는 키와 함께 view에 myintroduce로 리턴.
-      return view ('myintroduce', array('intro_key'=>$intro));
+      return view ('myintroduce', array('introKey'=>$outjson));
   }
 
  //가입 funtion인  join_input
