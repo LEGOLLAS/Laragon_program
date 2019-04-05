@@ -7,7 +7,10 @@
   </head>
   <body>
 
-    <?php $convertData = json_decode($introKey,TRUE)?>
+    <?php
+    //JSON을 다시 PHP 배열로 변환
+      $convertData = json_decode($introKey,TRUE);
+    ?>
 
     <div id="form_header">
         <h1>자기소개서</h1>
