@@ -22,6 +22,7 @@ class IndexController extends Controller{
                  );
 
       $outjson = json_encode($intro, JSON_UNESCAPED_UNICODE);
+      
      //function introduce에서 만든 배열을 intro_key라는 키와 함께 view에 myintroduce로 리턴.
       return view ('myintroduce', array('introKey'=>$outjson));
   }
