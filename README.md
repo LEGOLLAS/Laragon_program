@@ -38,6 +38,8 @@
 7. encoding, decoding 과정에서 TRUE 유(배열로 변환)무(객체로 변환) 및 false(NULL) 익히기 
 8. json 한글 깨짐 현상 해결
     - 인코딩 / 디코딩시에 파라미터로 JSON_UNESCAPED_UNICODE를 선언
+9. json 객체의 특정 값 불러오기
+
 ### 라라벨 고유언어
 1. 제어문과 반복문 익히기
 2. 출력문 익히기
