@@ -15,3 +15,4 @@ Route::get('/', 'IndexController@introduce');
 Route::get('/join', 'IndexController@joinInput');
 Route::post('/joinOutput', 'IndexController@joinOutput');
 Route::get('/team', 'IndexController@showTeam');
+Route::get('/create', 'IndexController@showTeam');

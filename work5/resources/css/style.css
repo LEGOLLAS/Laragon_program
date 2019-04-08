@@ -20,9 +20,23 @@
   margin: 0 auto;
 }
 .form_content{
-  width: 650px;
+  border-spacing: 0px;  
+  width: 85%;
   margin: 0 auto;
   border: 1px solid #000000;
+}
+.form_content tr th{
+   height: 35px;
+   border-right: 1px solid #000000;
+   border-bottom: 1px solid #000000;
+   text-align: center;
+   background: #81BEF7;
+}
+.form_content tr td{
+   height: 35px;
+   border-right: 1px solid #000000;
+   border-bottom: 1px solid #000000;
+   text-align: center;
 }
 #aaa input{
   width: 80px;
@@ -40,4 +54,35 @@
   text-align: center;
   width: 200px;
   border: 1px solid #000000;
+}
+#page_wrap{
+    width: 500px;
+    text-align:center;
+    margin: 0 auto;
+}
+.page-item{
+    float:left;
+    width: 35px;
+    list-style: none;
+}
+.form_register{
+    width: 85%;
+    margin: 0 auto;
+}
+.form_register input{
+    width: 100px;
+    margin-bottom:10px;
+}
+.register_form{
+    width: 50%;
+    float: left;
+}
+.form_bt {
+    border-radius: 5px;
+}
+.register_form input{
+    border-radius: 5px;
+}
+.search_bt{
+    float:right;
 }
