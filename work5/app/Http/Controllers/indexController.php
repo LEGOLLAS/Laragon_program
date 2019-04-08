@@ -4,18 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Flight;
+use App\Work5;
 
 
 //Controller에서 상속
 class IndexController extends Controller{
-
-  public function introduce(){
-      
-     $outData = Flight::paginate(10);
-     //function introduce에서 만든 배열을 intro_key라는 키와 함께 view에 myintroduce로 리턴.
-      return view ('myIntroduce', array('introKey'=>$outData));
-  }
 
  //가입 funtion인  join_input
   public function joinInput(){
@@ -27,7 +20,6 @@ class IndexController extends Controller{
   public function joinOutput(Request $request){
 
     $postData = $request->all();
-
     //각각 키을 부여받고 배열로 view에 있는 join_put으로 넘어간다.
     return view ('joinOutput', array('joinName'=>$postData['join_name'],
                                      'joinId'=>$postData['join_id'],
@@ -49,8 +41,33 @@ class IndexController extends Controller{
     //team_key라는 키를 부여한 view단에 show_team에게 전달
     return view ('showTeam', array('teamKey'=>$team));
   }
-  
-  public function create(){
-      return view ('create');
-  }
+
+  //참가자 메소드
+    public function participantsData(){
+
+       $outData = Work5::paginate(10);
+       //function introduce에서 만든 배열을 intro_key라는 키와 함께 view에 myintroduce로 리턴.
+        return view ('participants', array('introKey'=>$outData));
+    }
+    public function create(){
+        return view ('create');
+    }
+    public function update(Request $request){
+       $id = $request->get('id');
+       $result = Work5::find($id);
+    return  $result;
+      return view ('update', array('result'=>$result));
+    }
+
+//    public funciton store(){
+// 
+//             $id = null;
+//            $postData= $request->all();
+//        
+//            $resource = Work5::findOrNew($id);
+//            $resource->fill($postData);
+//            $resource->save();
+//            
+//            
+//    }
 }

@@ -5,7 +5,7 @@
     <title>등록하기</title>
     <link rel="stylesheet" href="http://localhost/work5/resources/css/style.css">
   </head>
-  <bopost
+  <body>
     <div class="register">
         <form class="register_info" action="/work5/public/participants" method="post">
           {{ csrf_field() }}
@@ -16,7 +16,7 @@
             </tr>
             <tr>
               <td>이메일 : </td>
-              <td><input type="text" name="create_email" value=""></td>
+              <td><input type="text" name="create_email" value="{{$result->email}}"></td>
             </tr>
             <tr>
               <td>회원구분 : </td>

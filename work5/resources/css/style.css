@@ -20,7 +20,7 @@
   margin: 0 auto;
 }
 .form_content{
-  border-spacing: 0px;  
+  border-spacing: 0px;
   width: 85%;
   margin: 0 auto;
   border: 1px solid #000000;
@@ -56,7 +56,7 @@
   border: 1px solid #000000;
 }
 #page_wrap{
-    width: 500px;
+    width: 560px;
     text-align:center;
     margin: 0 auto;
 }
@@ -85,4 +85,14 @@
 }
 .search_bt{
     float:right;
+}
+.register_info{
+  width: 85%;
+  height: 300px;
+  margin: 0 auto;
+}
+.table_top{
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }

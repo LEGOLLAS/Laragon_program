@@ -4,18 +4,17 @@
     <meta charset="utf-8">
     <title>홍지혁 데이터 테이블</title>
     <link rel="stylesheet" href="http://localhost/work5/resources/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-    <form class='form_register' action="action" type='get'>
+    <div class="table_top">
         <div class='register_form'>
-           <input type="submit" name="modification" value="등록">
+           <input type="button" name="modification" value="등록하기" onClick="location.href='http://localhost/work5/public/create'">
         </div>
         <div class='register_form'>
            <input class="search_bt" type="submit" value="Search">
            <input class="search_bt" type="search" placeholder="Search" style="width:200px; ">
         </div>
-    </form>
+      </div>
     <table class="form_content">
         <tr>
             <th>번호</th>
@@ -40,10 +39,8 @@
             <td>{{$item->position}}</td>
             <td>{{$item->callnum}}</td>
             <td style='border-right: 0;'>
-                <form action="" name="" type='get'>
-                    <input class='form_bt' type="submit" name="modification" value="수정">
-                    <input class='form_bt'  type="submit" name="delete" value="삭제">
-                </form>
+                <input class='form_bt' type="button" name="modification" value="수정" onClick="location.href='http://localhost/work5/public/update?id=1'">
+                <input class='form_bt'  type="button" name="delete" value="삭제" onClick="location.href=''">
             </td>
         </tr>
         @endforeach

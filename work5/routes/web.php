@@ -10,9 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'IndexController@introduce');
 Route::get('/join', 'IndexController@joinInput');
 Route::post('/joinOutput', 'IndexController@joinOutput');
 Route::get('/team', 'IndexController@showTeam');
-Route::get('/create', 'IndexController@showTeam');
+Route::get('/', 'IndexController@participantsData');
+Route::get('/create', 'IndexController@create');
+Route::get('/update', 'IndexController@update');
