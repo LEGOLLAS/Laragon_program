@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>등록하기</title>
+    <title>수정하기</title>
     <link rel="stylesheet" href="http://localhost/work5/resources/css/style.css">
   </head>
   <body>

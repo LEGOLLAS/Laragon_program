@@ -86,8 +86,11 @@ class IndexController extends Controller{
         Work5::destroy($id);
         return redirect('/');
     }
-    public function show(){
-        return view ('showInfo');
+    public function show(Request $request){
+      //  $showData = $request->all();
+        $id = $request->get('id');
+        $result = Work5::find($id);
+        return view ('showInfo', array('showMe'=>$result));
     }
     public function search(Request $request){
         return redirect ('/');

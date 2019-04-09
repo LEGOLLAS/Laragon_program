@@ -42,7 +42,7 @@
             <td>{{$item->position}}</td>
             <td>{{$item->callnum}}</td>
             <td>
-                <input class='form_bt' type="button" name="modification" value="수정" onClick="location.href='http://localhost/work5/public/update?id={{$item->id}}'">
+                <input class='form_bt' type="button" name="modification" value="수정" onClick="location.href='http://localhost/work5/public/edit?id={{$item->id}}'">
                <form class="" action="/work5/public/delete" method="post">
                  {{ csrf_field() }}
                  <input type="hidden" name="id" value="{{$item->id}}">
@@ -50,7 +50,7 @@
                </form>
             </td>
             <td style='border-right: 0;'>
-                <a href="http://localhost/work5/public/info">상세보기</a>
+                <a href="http://localhost/work5/public/info?id={{$item->id}}">상세보기</a>
             </td>
         </tr>
         @endforeach
