@@ -13,9 +13,11 @@
 Route::get('/join', 'IndexController@joinInput');
 Route::post('/joinOutput', 'IndexController@joinOutput');
 Route::get('/team', 'IndexController@showTeam');
-Route::get('/', 'IndexController@participantsData');
+Route::get('/', 'IndexController@index');
 Route::get('/create', 'IndexController@create');
-Route::get('/update', 'IndexController@update');
+Route::get('/info','IndexController@show');
+Route::get('/edit', 'IndexController@edit');
 Route::post('/store','IndexController@store');
-Route::post('/modify','IndexController@modify');
-Route::post('/destroy','IndexController@destroy');
+Route::post('/update','IndexController@update');
+Route::post('/delete','IndexController@delete');
+Route::get('/search'.'IndexController@search');

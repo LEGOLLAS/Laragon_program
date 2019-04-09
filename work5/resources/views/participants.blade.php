@@ -10,10 +10,13 @@
         <div class='register_form'>
            <input type="button" name="modification" value="등록하기" onClick="location.href='http://localhost/work5/public/create'">
         </div>
-        <div class='register_form'>
-           <input class="search_bt" type="submit" value="Search">
-           <input class="search_bt" type="search" placeholder="Search" style="width:200px; ">
-        </div>
+        <form action="/work5/puclic/search" method="get">
+            {{ csrf_field() }}
+          <div class='register_form'>
+             <input class="search_bt" type="submit" value="Search">
+             <input class="search_bt" type="search" name ='searchData' value="" placeholder="Search" style="width:200px; ">
+          </div>
+        </form>
       </div>
     <table class="form_content">
         <tr>
@@ -38,13 +41,16 @@
             <td>{{$item->spot}}</td>
             <td>{{$item->position}}</td>
             <td>{{$item->callnum}}</td>
-            <td style='border-right: 0;'>
+            <td>
                 <input class='form_bt' type="button" name="modification" value="수정" onClick="location.href='http://localhost/work5/public/update?id={{$item->id}}'">
-               <form class="" action="/work5/public/destroy" method="post">
+               <form class="" action="/work5/public/delete" method="post">
                  {{ csrf_field() }}
                  <input type="hidden" name="id" value="{{$item->id}}">
                  <input class='form_bt'  type="submit" name="delete" value="삭제">
                </form>
+            </td>
+            <td style='border-right: 0;'>
+                <a href="http://localhost/work5/public/info">상세보기</a>
             </td>
         </tr>
         @endforeach

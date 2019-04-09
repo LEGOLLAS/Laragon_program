@@ -5,7 +5,7 @@
 </div>
 
   <!--전체 테이블을 반복하고 키의 수만큼 반복시킴 -->
-  @foreach ($team_key as $key => $value)
+  @foreach ($teamKey as $key => $value)
     <table id="team_table">
         <tr>
           <!--상단 제목에 팀 이름을 반복적으로 불러옴 -->

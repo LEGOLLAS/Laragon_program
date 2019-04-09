@@ -43,7 +43,7 @@ class IndexController extends Controller{
   }
 
   //참가자 메소드
-    public function participantsData(){
+    public function index(){
 
        $outData = Work5::orderby('id','desc')->paginate(10);
        //function introduce에서 만든 배열을 intro_key라는 키와 함께 view에 myintroduce로 리턴.
@@ -52,7 +52,7 @@ class IndexController extends Controller{
     public function create(){
         return view ('create');
     }
-    public function update(Request $request){
+    public function edit(Request $request){
       $id = $request->get('id');
       $result = Work5::find($id);
       return view ('update', array('result'=>$result));
@@ -73,18 +73,23 @@ class IndexController extends Controller{
 
             return redirect('/');
     }
-    public function modify(Request $request){
+    public function update(Request $request){
         $id = $request->get('id');
-
          $postData= $request->all();
          $resource = Work5::findOrNew($id);
          $resource->fill($postData);
          $resource->save();
         return redirect('/');
     }
-    public function destroy(Request $request){
+    public function delete(Request $request){
         $id = $request->all();
         Work5::destroy($id);
         return redirect('/');
+    }
+    public function show(){
+        return view ('showInfo');
+    }
+    public function search(Request $request){
+        return redirect ('/');
     }
 }
