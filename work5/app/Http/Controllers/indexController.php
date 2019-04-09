@@ -45,7 +45,7 @@ class IndexController extends Controller{
   //참가자 메소드
     public function participantsData(){
 
-       $outData = Work5::paginate(10);
+       $outData = Work5::orderby('id','desc')->paginate(10);
        //function introduce에서 만든 배열을 intro_key라는 키와 함께 view에 myintroduce로 리턴.
         return view ('participants', array('introKey'=>$outData));
     }
@@ -58,15 +58,33 @@ class IndexController extends Controller{
       return view ('update', array('result'=>$result));
     }
 
-//    public funciton store(){
-//
-//             $id = null;
-//            $postData= $request->all();
-//
-//            $resource = Work5::findOrNew($id);
-//            $resource->fill($postData);
-//            $resource->save();
-//
-//
-//    }
+    public function store(Request $request){
+
+            $id = null;
+            $postData= $request->all();
+
+          //  return $postData;
+
+            $resource = Work5::findOrNew($id);
+            $resource->fill($postData);
+            $resource->save();
+
+         //   echo '저장되었습니다';
+
+            return redirect('/');
+    }
+    public function modify(Request $request){
+        $id = $request->get('id');
+
+         $postData= $request->all();
+         $resource = Work5::findOrNew($id);
+         $resource->fill($postData);
+         $resource->save();
+        return redirect('/');
+    }
+    public function destroy(Request $request){
+        $id = $request->all();
+        Work5::destroy($id);
+        return redirect('/');
+    }
 }

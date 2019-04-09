@@ -40,7 +40,11 @@
             <td>{{$item->callnum}}</td>
             <td style='border-right: 0;'>
                 <input class='form_bt' type="button" name="modification" value="수정" onClick="location.href='http://localhost/work5/public/update?id={{$item->id}}'">
-                <input class='form_bt'  type="button" name="delete" value="삭제" onClick="location.href=''">
+               <form class="" action="/work5/public/destroy" method="post">
+                 {{ csrf_field() }}
+                 <input type="hidden" name="id" value="{{$item->id}}">
+                 <input class='form_bt'  type="submit" name="delete" value="삭제">
+               </form>
             </td>
         </tr>
         @endforeach

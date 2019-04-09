@@ -16,3 +16,6 @@ Route::get('/team', 'IndexController@showTeam');
 Route::get('/', 'IndexController@participantsData');
 Route::get('/create', 'IndexController@create');
 Route::get('/update', 'IndexController@update');
+Route::post('/store','IndexController@store');
+Route::post('/modify','IndexController@modify');
+Route::post('/destroy','IndexController@destroy');
