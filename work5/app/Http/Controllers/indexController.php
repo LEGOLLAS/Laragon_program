@@ -53,21 +53,20 @@ class IndexController extends Controller{
         return view ('create');
     }
     public function update(Request $request){
-       $id = $request->get('id');
-       $result = Work5::find($id);
-    return  $result;
+      $id = $request->get('id');
+      $result = Work5::find($id);
       return view ('update', array('result'=>$result));
     }
 
 //    public funciton store(){
-// 
+//
 //             $id = null;
 //            $postData= $request->all();
-//        
+//
 //            $resource = Work5::findOrNew($id);
 //            $resource->fill($postData);
 //            $resource->save();
-//            
-//            
+//
+//
 //    }
 }

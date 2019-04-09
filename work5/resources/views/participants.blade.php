@@ -39,7 +39,7 @@
             <td>{{$item->position}}</td>
             <td>{{$item->callnum}}</td>
             <td style='border-right: 0;'>
-                <input class='form_bt' type="button" name="modification" value="수정" onClick="location.href='http://localhost/work5/public/update?id=1'">
+                <input class='form_bt' type="button" name="modification" value="수정" onClick="location.href='http://localhost/work5/public/update?id={{$item->id}}'">
                 <input class='form_bt'  type="button" name="delete" value="삭제" onClick="location.href=''">
             </td>
         </tr>
