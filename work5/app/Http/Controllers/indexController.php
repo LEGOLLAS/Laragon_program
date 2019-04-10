@@ -44,7 +44,8 @@ class IndexController extends Controller{
 
   //참가자 메소드
     public function index(){
-       $outData = Work5::orderby('id','desc')->paginate(10);
+       $outData = Work5::where('member', '준회원')
+               ->where('position','부산대학교')->where('sex','남')->orderby('id','desc')->paginate(10);
        //function introduce에서 만든 배열을 intro_key라는 키와 함께 view에 myintroduce로 리턴.
         return view ('participants', array('introKey'=>$outData));
     }
@@ -93,7 +94,7 @@ class IndexController extends Controller{
     }
     public function search(Request $request){
        $value = $request->input('search');
-       $postData = Work5::search($value)->all();
+       $postData = Work5::where('position',$value)->get();
        return $postData;
        return view ('search', array('search'=>$result));
     }
