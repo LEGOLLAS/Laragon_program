@@ -10,11 +10,11 @@
         <div class='register_form'>
            <input type="button" name="modification" value="등록하기" onClick="location.href='http://localhost/work5/public/create'">
         </div>
-        <form action="/work5/puclic/search" method="get">
-            {{ csrf_field() }}
+        <form action="/work5/public/search" method="get">
+          {{ csrf_field() }}
           <div class='register_form'>
              <input class="search_bt" type="submit" value="Search">
-             <input class="search_bt" type="search" name ='searchData' value="" placeholder="Search" style="width:200px; ">
+             <input class="search_bt" type="search" name ='search' value="" placeholder="검색하기" style="width:200px; ">
           </div>
         </form>
       </div>

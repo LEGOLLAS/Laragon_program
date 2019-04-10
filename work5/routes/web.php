@@ -20,4 +20,4 @@ Route::get('/edit', 'IndexController@edit');
 Route::post('/store','IndexController@store');
 Route::post('/update','IndexController@update');
 Route::post('/delete','IndexController@delete');
-Route::get('/search'.'IndexController@search');
+Route::get('/search', 'indexController@search');

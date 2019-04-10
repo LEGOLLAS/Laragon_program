@@ -44,7 +44,6 @@ class IndexController extends Controller{
 
   //참가자 메소드
     public function index(){
-
        $outData = Work5::orderby('id','desc')->paginate(10);
        //function introduce에서 만든 배열을 intro_key라는 키와 함께 view에 myintroduce로 리턴.
         return view ('participants', array('introKey'=>$outData));
@@ -93,6 +92,10 @@ class IndexController extends Controller{
         return view ('showInfo', array('showMe'=>$result));
     }
     public function search(Request $request){
-        return redirect ('/');
+       $value = $request->input('search');
+       $postData = Work5::search($value)->all();
+       return $postData;
+       return view ('search', array('search'=>$result));
     }
+    
 }

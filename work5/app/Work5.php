@@ -11,4 +11,8 @@ class Work5 extends Model
     
     protected $fillable = ['email', 'member', 'kname', 'ename', 'sex', 'spot',
                             'position', 'callnum'];
+    
+    public static function search(){
+        
+    }
 }
