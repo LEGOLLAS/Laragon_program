@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="http://localhost/work5/resources/css/style.css">
   </head>
   <body>
-    {{$search}}
     <table class="form_content">
         <tr>
             <th>번호</th>
