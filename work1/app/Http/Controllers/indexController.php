@@ -16,7 +16,30 @@ class indexController extends Controller{
     return view ('register.register');
   }
 
-  public function show(){
-    return view ('mypage.mypage');
+  public function show(Request $request){
+    $id = $request->get('id');
+    $postData = Work1::find($id);
+    return view ('detailPage.detailPage', array('choiceData'=>$postData));
+  }
+  public function store(Request $request){
+    $id = null;
+    $postData = $request->all();
+    $resource = Work1::findOrNew($id);
+    $resource->fill($postData);
+    $resource->save();
+    return redirect('/');
+  }
+  public function edit(Request $request){
+    $id = $request->input('id');
+    $postData = Work1::find($id);
+    return view('edit.edit', array('postData'=>$postData));
+  }
+  public function update(Request $request){
+    $id = $request->get('id');
+    $postData = $request->all();
+    $resource = Work1::findOrNew($id);
+    $resource->fill($postData);
+    $resource->save();
+    return redirect('/');
   }
 }

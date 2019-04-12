@@ -12,4 +12,7 @@
 */
 Route::get('/', 'indexController@index');
 Route::get('/register','indexController@create');
-Route::get('/mypage','indexController@show');
+Route::get('/detailPage','indexController@show');
+Route::post('/store','indexController@store');
+Route::get('/edit', 'indexController@edit');
+Route::post('/update', 'indexController@update');

@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="register">
-        <form class="register_info" action="/work5/public/modify" method="post">
+        <form class="register_info" action="/work5/public/update" method="post">
           {{ csrf_field() }}
           <input type="text" name="id" value="{{$result->id}}">
           <table>
