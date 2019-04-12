@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>회원등록</title>
+    <title>수정하기</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -41,6 +41,7 @@
             <div class="col-sm-6 col-md-offset-3">
                 <form role="form" onSubmit="return check()" name='registerForm' action='update' method="post">
                     {{ csrf_field() }}
+                    <input type="hidden" name='id' value="{{$postData->id}}">
                     <div class="form-group">
                         <label for="inputName">아이디(이메일주소)</label>
                         <input type="text" class="form-control"  value='{{$postData->email}}' id="inputName" name='email' placeholder="아이디를 입력해 주세요">

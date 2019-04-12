@@ -42,4 +42,22 @@ class indexController extends Controller{
     $resource->save();
     return redirect('/');
   }
+  public function delete(Request $request){
+    $id = $request->all();
+    Work1::destroy($id);
+    return redirect('/');
+  }
+  public function search(Request $request){
+    $searchData = $request->input('search');
+    $postData = Work1::where('id', $searchData)
+                     ->orwhere('email', $searchData)
+                     ->orwhere('member', $searchData)
+                     ->orwhere('kname', $searchData)
+                     ->orwhere('ename', $searchData)
+                     ->orwhere('sex', $searchData)
+                     ->orwhere('spot', $searchData)
+                     ->orwhere('position', $searchData)
+                     ->orwhere('callNumber', $searchData)->paginate(10);
+    return view('search.search', array('searchData'=>$postData));
+  }
 }

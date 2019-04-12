@@ -16,3 +16,5 @@ Route::get('/detailPage','indexController@show');
 Route::post('/store','indexController@store');
 Route::get('/edit', 'indexController@edit');
 Route::post('/update', 'indexController@update');
+Route::post('/delete', 'indexController@delete');
+Route::get('/search', 'indexController@search');

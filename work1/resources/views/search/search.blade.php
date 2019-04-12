@@ -70,7 +70,7 @@
     	    </tr>
     	  </thead>
     	  <tbody>
-          @foreach($postData as $item)
+          @foreach($searchData as $item)
           <tr>
             <td class='text-center'>{{$item->id}}</td>
             <td class='text-center'>{{$item->email}}</td>
@@ -103,7 +103,7 @@
      </style>
 
       <div id="page_wrap" style="text-align:center">
-        {!!$postData->appends([ 'searchString' => Request::get('searchString')])->render()!!}
+        {!!$searchData->appends([ 'searchString' => Request::get('searchString')])->render()!!}
       </div>
     </div>
   </body>
