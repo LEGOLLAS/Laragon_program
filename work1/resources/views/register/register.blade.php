@@ -8,14 +8,14 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
            <a class="navbar-brand hidden-xs" href="http://localhost/work1/public/">CRUD HONG</a>
-           <form class="navbar-form pull-left" role="search">
+           <form class="navbar-form pull-left" action='search' role="search" method="get">
               <div class="input-group">
-                 <input type="text" class="form-control" placeholder="Search">
+                 <input type="text" class="form-control" placeholder="Search" name='search' value="">
                  <div class="input-group-btn">
                     <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                  </div>
@@ -25,7 +25,6 @@
         <div class="navbar-collapse collapse">
            <ul class="nav navbar-nav navbar-right">
               <li><a href="http://localhost/work1/public/">HOME</a></li>
-              <li><a href="http://localhost/work1/public/mypage">MYPAGE</a></li>
               <li class="active"><a href="http://localhost/work1/public/register">REGISTER</a></li>
            </ul>
         </div>

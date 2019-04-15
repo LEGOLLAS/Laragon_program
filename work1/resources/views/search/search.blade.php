@@ -99,7 +99,7 @@
     	</table>
 
      <style media="screen">
-       #page_wrap{ width: 600px; text-align:center; margin: 0 auto;}
+       #page_wrap{ width: 700px; text-align:center; margin: 0 auto;}
      </style>
 
       <div id="page_wrap" style="text-align:center">

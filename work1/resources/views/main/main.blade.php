@@ -29,7 +29,7 @@
     </style>
 
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
@@ -99,7 +99,7 @@
     	</table>
 
      <style media="screen">
-       #page_wrap{ width: 600px; text-align:center; margin: 0 auto;}
+       #page_wrap{ width: 700; text-align:center; margin: 0 auto;}
      </style>
 
       <div id="page_wrap" style="text-align:center">
